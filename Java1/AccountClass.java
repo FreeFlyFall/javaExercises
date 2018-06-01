@@ -1,17 +1,17 @@
-/*(The Account class) Design a class named Account that contains:
-• A private int data field named id for the account (default 0).
-• A private double data field named balance for the account (default 0).
-• A private static double data field named annualInterestRate that stores the current
+/*Design a class named Account that contains:
+â€¢ A private int data field named id for the account (default 0).
+â€¢ A private double data field named balance for the account (default 0).
+â€¢ A private static double data field named annualInterestRate that stores the current
 interest rate (default 0). Assume all accounts have the same interest rate.
-• A private Date data field named dateCreated that stores the date when the account
+â€¢ A private Date data field named dateCreated that stores the date when the account
 was created.
-• A no-arg constructor that creates a default account.
-• A constructor that creates an account with the specified id and initial balance.
-• The accessor and mutator methods for id, balance, and annualInterestRate.
-• The accessor method for dateCreated.
-• A method named getMonthlyInterest() that returns the monthly interest rate.
-• A method named withdraw that withdraws a specified amount from the account.
-• A method named deposit that deposits a specified amount to the account.
+â€¢ A no-arg constructor that creates a default account.
+â€¢ A constructor that creates an account with the specified id and initial balance.
+â€¢ The accessor and mutator methods for id, balance, and annualInterestRate.
+â€¢ The accessor method for dateCreated.
+â€¢ A method named getMonthlyInterest() that returns the monthly interest rate.
+â€¢ A method named withdraw that withdraws a specified amount from the account.
+â€¢ A method named deposit that deposits a specified amount to the account.
 Write a test program that creates an Account object with an account ID of 3040, a
 balance of $30,000, and an annual interest rate of 3.5%. Use the withdraw method to
 withdraw $3,500, use the deposit method to deposit $2,000, and print the balance ID, the
