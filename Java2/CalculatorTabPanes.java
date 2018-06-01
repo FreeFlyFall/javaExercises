@@ -1,5 +1,5 @@
-/*Write a program using tab panes for performing simple and advanced calculations as shown
-in the following figures: In the first tab, Simple Calculator, there are four operations, add,
+/*Write a program using tab panes for performing simple and advanced calculations.
+In the first tab, Simple Calculator, there are four operations, add,
 subtract, multiply and divide. In the second tab, Advanced Calculator, the operations are
 square root (Sqrt) (Sqrt(9)=3), absolute value (Abs) (Abs(-9)=9), Floor (floor(2.2)=2,
 floor(2.9)=2) and Ceil (ceil(2.2)=3, ceil(2.9)=3). For these math functions, please refer to
