@@ -29,7 +29,7 @@ public class MovingText extends Application {
         //Create a line for the path
         Line line1 = new Line(-55, 40, 305, 40);
         //line1.endXProperty().bind(pane.widthProperty().add(305));
-        //^^^PathTransition doesn't track changes automatically^^^
+        //^^^doesn't track changes automatically^^^
         //Can't use it for this purpose
         
 	//Create text shape
