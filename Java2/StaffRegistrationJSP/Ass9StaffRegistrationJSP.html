@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- RegistrationWithHttpSession.html -->
+<html>
+    <head>
+        <title>Registration Using JSP</title>
+    </head>
+    <body>
+        Please register to your staff address book.
+
+        <!--Create a form for user input and name the fields-->
+        <form method="get" action="Ass9GetRegistrationData.jsp">
+
+            <p>ID <font color="#FF0000">*</font>
+                <input type="text" name="id">&nbsp;
+                Last Name <font color="#FF0000">*</font>
+                <input type="text" name="lastName">&nbsp;
+                First Name <font color="#FF0000">*</font>
+                <input type="text" name="firstName">&nbsp;
+                MI <input type="text" name="mi" size="3"></p>
+            
+            <p>Address <input type="text" name="location" size="50"></p>
+            
+            <p>City <input type="text" name="city" size="23">&nbsp;
+                 State <select size="1" name="state">
+                    <option value="GA">Georgia-GA</option>
+                    <option value="OK">Oklahoma-OK</option>
+                    <option value="IN">Indiana-IN</option>
+                </select>&nbsp; 
+                
+            <p>Telephone <input type="text" name="telephone" size="20">&nbsp;
+                Email <input type="text" name="email" size="28">&nbsp;</p>
+
+            <p><input type="submit" name="Submit" value="Submit">
+                <input type="reset" value="Reset"></p>
+
+        </form>
+        <p><font color="#FF0000">* required fields</font></p>
+    </body>
+</html>
