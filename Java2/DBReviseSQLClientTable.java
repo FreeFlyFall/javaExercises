@@ -1,6 +1,11 @@
 /*Rewrite Listing 35.1, SQLClient.java, to display the query result in a
 TableView.
 
+For example, a user can type two SQL commands like select and Insert statements. Please
+note that the new inserted record should be displayed in the TableView when “Execute
+SQL Command” button is clicked. (Note: for the TableView class, refer to Ch. 31).
+In addition, you need to re-write the clear button to clear the TableView.
+
 In this version, the clear button clears the TableView instead of the SQL commmand text area.
 */
 
