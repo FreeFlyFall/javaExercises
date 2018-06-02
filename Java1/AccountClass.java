@@ -7,7 +7,7 @@ interest rate (default 0). Assume all accounts have the same interest rate.
 was created.
 • A no-arg constructor that creates a default account.
 • A constructor that creates an account with the specified id and initial balance.
-• The accessor and mutator methods for id, balance, and annualInterestRate.
+• The accessor and mutator(getter and setter) methods for id, balance, and annualInterestRate.
 • The accessor method for dateCreated.
 • A method named getMonthlyInterest() that returns the monthly interest rate.
 • A method named withdraw that withdraws a specified amount from the account.
