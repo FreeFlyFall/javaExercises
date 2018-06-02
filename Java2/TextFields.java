@@ -1,4 +1,4 @@
-/*Modify the example 14.10 in Section 14.10.1 (ShowFlowPane.java in page 559 in your
+//*Modify the example 14.10 in Section 14.10.1 (ShowFlowPane.java in page 559 in your
 textbook) to prompt user to enter his/her first, middle (if any) and last name and display
 them in three Text Fields as shown in the sample runs and figures below:
 Note: If the user has a middle name, only the initial letter need to be displayed.*/
