@@ -3,7 +3,7 @@ textbook) to prompt user to enter his/her first, middle (if any) and last name a
 them in three Text Fields as shown in the sample runs and figures below:
 Note: If the user has a middle name, only the initial letter need to be displayed.*/
 
-package test1;
+package textfields;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -19,7 +19,7 @@ import javafx.scene.layout.FlowPane;
 import java.util.Scanner;
 import static javafx.application.Application.launch;
 
-public class Test1 extends Application {
+public class TextFields extends Application {
     
     public void start(Stage primaryStage) {
         
