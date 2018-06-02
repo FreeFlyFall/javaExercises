@@ -1,7 +1,7 @@
 /*Rewrite Listing 35.1, SQLClient.java, to display the query result in a
 TableView.
 
-In this version, the clear button clears the TableView.
+In this version, the clear button clears the TableView instead of the SQL commmand text area.
 */
 
 package dbrevisesqlclienttable;
