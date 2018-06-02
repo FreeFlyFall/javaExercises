@@ -3,7 +3,7 @@ textbook) to prompt user to enter his/her first, middle (if any) and last name a
 them in three Text Fields as shown in the sample runs and figures below:
 Note: If the user has a middle name, only the initial letter need to be displayed.*/
 
-package ass1textfields;
+package test1;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -19,7 +19,7 @@ import javafx.scene.layout.FlowPane;
 import java.util.Scanner;
 import static javafx.application.Application.launch;
 
-public class TextFields extends Application {
+public class Test1 extends Application {
     
     public void start(Stage primaryStage) {
         
@@ -49,7 +49,8 @@ public class TextFields extends Application {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter your first name: ");
         String a = input.nextLine();
-        return a;
+        String b = a.substring(0, 1).toUpperCase() + a.substring(1);
+        return b;
     }
     
     //Method to return the input of the user's middle name, if they have one
@@ -59,12 +60,12 @@ public class TextFields extends Application {
         String yes = "Y";
         System.out.println("Do you have a middle name: "
                 + "Type Y if yes, or N if no:");
-        String c = input.nextLine();
+        String a = input.nextLine().substring(0,1);
         //If the user has a middle name, ask the user to enter it
-        if (c.equalsIgnoreCase(yes)) {
+        if (a.equalsIgnoreCase(yes)) {
             System.out.println("Enter your middle name: "); 
-            String a = input.nextLine().substring(0,1);
-            return a;
+            String b = input.nextLine().substring(0,1).toUpperCase();
+            return b;
         }
         return "";
     }
@@ -74,7 +75,8 @@ public class TextFields extends Application {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your last name: ");
         String a = input.nextLine();
-        return a;   
+        String b = a.substring(0, 1).toUpperCase() + a.substring(1);
+        return b;   
     }
     
   /**
