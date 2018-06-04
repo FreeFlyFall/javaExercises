@@ -73,7 +73,7 @@ public class SortArrayList {
             /*If the selected index is not the index of the array that it was 
              *initially, set the selected index's element(k) to be the initially
              *selected element of the arraylist(value at index of i), and set the
-             *initially selected index to be the value of sub.
+             *initially selected element to be the value of sub.
              */
             if (selectedIndex != i) {
                 list.set(selectedIndex, list.get(i));
