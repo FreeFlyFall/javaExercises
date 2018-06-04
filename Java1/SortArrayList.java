@@ -9,13 +9,13 @@ increasing order, and displays them.
 Note: You are not allowed to use any predefined sorting method in your implementation
 of the sort method.*/
 
-package test2;
+package sortarraylist;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Test2 {
+public class SortArrayList {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in); //Create scanner
