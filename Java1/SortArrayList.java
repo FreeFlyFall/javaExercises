@@ -1,19 +1,21 @@
 /*Implement the following method that sorts an ArrayList of integers:
-public static void sort(ArrayList<Integer> list){
-}
+
+    public static void sort(ArrayList<Integer> list){
+    }
+
 Write a test program that prompts the user to enter a number of integers, stores them in an
 array list (i.e., ArrayList), call the sort method to have this list of integers sorted in
 increasing order, and displays them.
 Note: You are not allowed to use any predefined sorting method in your implementation
 of the sort method.*/
 
-package sortarraylist;
+package test2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SortArrayList {
+public class Test2 {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in); //Create scanner
@@ -25,7 +27,7 @@ public class SortArrayList {
         System.out.print("Enter " + n + " integers: ");
         
         //Create an array with the size of variable n to hold the values
-        Integer[] array = new Integer [n];
+        Integer[] array = new Integer[n];
         
         //Loop to assign the values to each consecutive index of an array
         for (int i = 0; i < n; i++) {
@@ -41,33 +43,41 @@ public class SortArrayList {
         //Print the arraylist, excluding the brackets and commas
         System.out.println
         (list.toString().substring(1).replaceFirst("]", "").replace(", ", " "));
-    }
+    }    
 
     //Method to sort an arraylist
     public static void sortArrayList(ArrayList<Integer> list) {
-        //Loop to select each value in the array list
-        for (int i = 0; i < list.size(); i++) { 
+        /*Loop through the next loop(the sorting loop) a number of times, 
+         *according to the number of values the arraylist holds holds.
+         */
+        for (int i = 0; i < list.size(); i++) {
+            /*Variable extracted from the array to serve as a substitute value
+             *(Starts by holding the initial index's value for each loop, i).
+             */
+            int sub = list.get(i);
+            //Selected index (starts at i)
             int selectedIndex = i;
-            Integer selected = list.get(i); 
             
-            
-            /*Compare the next value in the arraylist to the currently selected
-            value. If the currently selected value is greater, the next value
-            becomes the selected value.*/
+            /*Loop to compare the value in the next index of the arraylist to
+             *sub. If the value in the next index of the arraylist is greater than
+             *sub, then sub becomes the value of the next index(value at index of 
+             *k), and the selected index becomes the next index of the array(k).
+             */
             for (int k = i + 1; k < list.size(); k++) {
-                if (selected > list.get(k)) {
-                    selected = list.get(k);
+                if (sub > list.get(k)) {
+                    sub = list.get(k);
                     selectedIndex = k;
                 }
             }   
             
-            /*If the selected value is no longer the originally selected value
-            put the selected value in the index of the original value, and
-            set the original value as the selected value again before
-            repeating the loop.*/
+            /*If the selected index is not the index of the array that it was 
+             *initially, set the selected index's element(k) to be the initially
+             *selected element of the arraylist(value at index of i), and set the
+             *initially selected index to be the value of sub.
+             */
             if (selectedIndex != i) {
                 list.set(selectedIndex, list.get(i));
-                list.set(i, selected);
+                list.set(i, sub);
             }
         }
     }
