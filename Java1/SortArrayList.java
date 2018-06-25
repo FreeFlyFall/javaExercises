@@ -45,6 +45,7 @@ public class SortArrayList {
         (list.toString().substring(1).replaceFirst("]", "").replace(", ", " "));
     }    
 
+    //** Selection sort **
     //Method to sort an arraylist by placing the lowest value of an array first
     public static void sortArrayList(ArrayList<Integer> list) {
         /*Loop through the next loop(the sorting loop) a number of times, 
